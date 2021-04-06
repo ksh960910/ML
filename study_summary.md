@@ -80,4 +80,22 @@ ROC곡선의 AUC(area under curve) 면적이 1에 가까울수록 좋은 지표�
 # Regression 
 핵심은 주어진 feature와 target값 데이터 기반에서 학습을 통해 최적의 '회귀 계수 w'를 찾아내는 것이다 
 
+# Regression 평가 지표
+## MAE (mean absolute error)
+- 실제 값 - 예측값 절대값의 평균
+## MSE (mean squared error)
+- 실제값 - 예측값을 제곱해서 평균
+## MSLE (mean squared log error)
+- MSE에 로그씌움. 일부 큰 오류값들 때문에 전체 오류값이 커지는걸 방지
+## RMSE (root mean squared error)
+- MSE에 루트씌움. MSE가 제곱값들이기 때문에 실제 오류평균보다 클 수 있기에 루트씌워줌
+## R2 score
+- 예측값 분산 / 실제값 분산, 1에 가까울수록 예측 정확도 높음
+
+# 다항회귀
+### 다항회귀를 언제쓰는가?
+- 단순 직선으로만 표현되는것보다 곡선형으로 표현되는것이 더 성능이 좋을 떄 다항회귀를 사용한다
+- 다항회귀도 '선형'이다. 선형의 기준은 회귀 계수인 w가 어떻게 곱해지고 더해지느냐 차이에 있다
+- w1*cos(X + w2) 이런게 비선형이다
+- 다항회귀의 성능을 높히고자 degree를 높히는 순간 오버피팅되기 굉장히 쉬워진다
 
