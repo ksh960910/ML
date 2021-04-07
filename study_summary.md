@@ -77,6 +77,16 @@ True라고 판단했는데 실제 True / (실제 True인데 False라고 판단 +
 ROC곡선의 AUC(area under curve) 면적이 1에 가까울수록 좋은 지표이다
 
 
+# bagging , boosting 선택 조건
+bagging은 여러 모델을 모델을 만들어 병렬로 학습, 각각의 모델이 독립적이다 (RandomForest)
+boosting은 한 모델로 학습 후 오답에 가중치를 줘서 계속 오류를 수정해나가는 방법 (앙상블, gbm)
+부스팅이 배깅보다 성능이 좋다  /  속도가 느리고 오버피팅 될 가능성이 높음
+
+결론 : 오버피팅이 문제라면 bagging, 단순 성능이 낮으면 boosting
+
+
+
+
 # Regression 
 핵심은 주어진 feature와 target값 데이터 기반에서 학습을 통해 최적의 '회귀 계수 w'를 찾아내는 것이다 
 
