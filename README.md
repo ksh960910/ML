@@ -11,6 +11,10 @@
 ## unsupervised learning
 
 ### PCA
+- 데이터를 잘 설명할 수 있는 '잠재적(Latent)'인 요소를 추출하는 것
+  - 추천 엔진
+  - 이미지 분류 및 변환
+  - 문서 
 - 원하는 explained variance ratio를 정하여 원하는 만큼 원본 데이터를 보존하면서 차원 축소를 할수 있음
 - kernelPCA와 gridsearchCV를 이용하여 best_params_를 찾아 정확도를 높힐 수 있음
 - 
