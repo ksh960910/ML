@@ -17,4 +17,6 @@
   - 문서 
 - 원하는 explained variance ratio를 정하여 원하는 만큼 원본 데이터를 보존하면서 차원 축소를 할수 있음
 - kernelPCA와 gridsearchCV를 이용하여 best_params_를 찾아 정확도를 높힐 수 있음
-- 
+
+### LDA
+- pca와 비슷한 느낌이지만 각각의 class를 더 명확하게 분리하는 축으로 차원축소를 
