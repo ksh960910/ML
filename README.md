@@ -19,4 +19,5 @@
 - kernelPCA와 gridsearchCV를 이용하여 best_params_를 찾아 정확도를 높힐 수 있음
 
 ### LDA
-- pca와 비슷한 느낌이지만 각각의 class를 더 명확하게 분리하는 축으로 차원축소를 
+- pca와 비슷한 느낌이지만 각각의 class를 더 명확하게 분리하는 축으로 차원축소를 함
+- 
